@@ -99,7 +99,7 @@
   Total: <span id="total-count">1</span> •
 
   <!-- link to clean up todos that are done -->
-  <a href="#" onclick="cleanUpDoneTodos(); return false">Clean up</a>
+  <a href="#" onclick="cleanUpDoneTodos(); return false">Clean up </a>
 </div>
   </div>
 
@@ -185,6 +185,7 @@ function submitTodo() {
   function nextTodoId() {
   return document.getElementsByClassName("todo").length + 1;
 }
+}
   function cleanUpDoneTodos() {
   var list = document.getElementById("todolist");
   var doneItems = document.getElementsByClassName("completed");
@@ -193,10 +194,11 @@ function submitTodo() {
   for (var i = doneItems.length; i > 0; i--) {
     list.removeChild(doneItems[i-1]);
   }
+
   updateCounters();
 }
 
-}
+
 
   </script>
 
